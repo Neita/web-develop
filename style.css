@@ -1,0 +1,95 @@
+/*1) поле страницы фиксированной ширины (выбери сама из рассчета чтобы на большинстве мониторов отображался без горизонтальной прокрутки, но и не казался чересчур мелким)
+2) свободные поля справа и слева должны быть одинаковыми (атвоматическая центровка страницы)
+3) структура: хедер - 100% страницы по ширине, левая колонка -15%, центральная колонка — 65%, правая колонка - 15%, футер - 100% страницы по ширине
+4) порядок закгрузки страницы должен быть: хедер, центральная колонка, левая колонка, правая колонка, футер*/
+
+#wrapper 		{
+		margin		: 0 auto;
+		width		: 92%; 
+		
+}
+
+#header 		{
+		width		: 100%; 
+		height		: 100px;
+		margin		: 0 auto;
+}
+ 
+.col			{
+		margin		: 2px 1% 2px 0;
+		width		: 24%; 
+		height		: 200px;
+		float		: left;
+			
+}
+
+.footer-in	{
+		margin		: 2px 1.7% 2px 0;
+		width		: 32%; 
+		height		: 95px; 
+		float		: left;
+	
+}
+
+.last 			{
+	
+		float		: right;
+		margin-right: 0px;
+
+}
+
+#footer 		{
+		width		: 100%; 
+		height		: 100px; 
+		margin		: 0 auto; 
+		clear		: both;
+		margin		: 0 auto;
+}
+
+
+/*body 			{
+		color		: #00008B; 
+		height		: 100%;
+		width		: 100%;
+		margin		: 0 auto;
+		font-family	: Calibri, sans-serif;
+		padding		: 20px auto;
+	
+}
+
+
+
+.hdr 		{
+		position	: absolute;
+		
+		top			: 250px;
+		left		: 10px;
+		float		: left;
+		width		: 90%;
+		color       : #4682B4;
+		font-weight	: 900;
+		font-family	: Andale Mono, monospace;
+		font-size	: 300%;
+		
+}
+
+#search 	{
+		color       : #4682B4;
+		font-weight	: 900;
+		font-family	: Andale Mono, monospace;
+		font-size	: 100%;
+
+}
+
+#copyright 	{	
+		
+		top			: 20px;
+		width		: 100%;
+		color		: #FFFAFA;
+		font-weight	: 900;
+		font-family	: Andale Mono, monospace;
+		font-size	: 100%;
+		margin		: 2px 0;
+		text-align	: center;
+		padding		: 12px;
+}
